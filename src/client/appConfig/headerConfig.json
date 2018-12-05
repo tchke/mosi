@@ -1,0 +1,24 @@
+{
+    "items": [
+        {
+            "title": "Home",
+            "path": "/",
+            "iconSrcKey": "Home"
+        },
+        {
+            "title": "Prescriptions",
+            "path": "/prescription",
+            "iconSrcKey": "Prescription"
+        },
+        {
+            "title": "Health services",
+            "path": "/healthservices",
+            "iconSrcKey": "healthservices"
+        },
+        {
+            "title": "Book an appoinment",
+            "path": "/bookappointment",
+            "iconSrcKey": "bookappoinment"
+        }
+    ]
+}

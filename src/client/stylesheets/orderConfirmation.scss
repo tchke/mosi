@@ -1,0 +1,25 @@
+.orderConfirmationContainer {
+    align-items: center;
+    color: $black;
+    display: flex;
+    flex-direction: column;
+    margin-top: 3.75em;
+    width: 100%;
+    min-height: calc(100% - 542px)
+}
+
+.orderConfirmationFooter {
+    font-family: $font-roboto;
+    line-height: 1.875em;
+    margin: 1.25em 0 2.5em;
+
+    a {
+        color: $blue;
+        cursor: pointer;
+        text-decoration: none;
+    }
+
+    a:hover {
+        color: $darkBlue;
+    }
+}

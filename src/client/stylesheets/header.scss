@@ -1,0 +1,105 @@
+// $primary-background-color: #004990;
+// $secondary-header-color: #cae0f5;
+// $primary-color: #ffffff;
+// $font-family: ProximaNova;
+// $font-size: 1em;
+// $font-secon-size: 1.125em;
+// $blackColor: #000;
+
+header {
+    background-color: $boots-blue;
+    color: $primary-color;
+
+    a, a:hover, button {
+        color: $primary-color;
+    }
+
+    button {
+        border-radius: 6px;
+        border: solid 2px #ffffff;
+        background-color: $boots-blue;
+    }
+
+    .navbar {
+        height: 70px;
+        padding-left: 15px;
+        padding-right: 15px;
+
+        .navbar-toggler {
+            padding: 0;
+            margin-right: 15px;
+
+            img {
+                width: 28px;
+                height: 19px;
+            }
+        }
+
+        @include media-breakpoint-down(sm) {
+            .navbar-collapse {
+                width: 313px;
+            }
+        }
+
+
+        @include media-breakpoint-down(md) {
+            .navbar-collapse {
+                background-color: $light-blue-active;
+                position: absolute;
+                top: 70px;
+                left: 0;
+                max-width: 384px;
+                z-index: 1000;
+
+                li {
+                    padding: 23px 0 23px 14px;
+                    border-bottom: solid 1px $primary-color;
+                }
+
+                a {
+                    padding-left: 15px;
+                    padding-top: 0;
+                    padding-bottom: 0;
+                    font-family: ProximaNova;
+                    font-size: 18px;
+                    font-weight: bold;
+                    font-style: normal;
+                    font-stretch: normal;
+                    display: inline;
+                    color: $boots-blue;
+                }
+            }
+        }
+
+
+        // @include media-breakpoint-up(lg) {
+        //     .navbar-collapse {
+        //         background-color: $boots-blue;
+        //         position: static;
+
+        //         a {
+        //             color: $primary-color;
+        //         }
+        //     }
+        // }
+
+        .navbar-nav {
+            width: 100%;
+        }
+    }
+
+    @include media-breakpoint-up(lg) {
+        .navbar {
+            padding-right: 165px;
+            padding-left: 165px;
+
+            .navbar-collapse {
+                li {
+                    img {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+}

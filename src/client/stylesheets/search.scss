@@ -1,0 +1,334 @@
+.contentStyle
+  {
+  .prescriptionJourneyButton{
+    width: 255px;
+    height: 60px;
+    border-radius: 6px;
+    background-color: $boots-blue;
+    border: solid 2px $boots-blue;
+    cursor: pointer;
+    }
+    .prescriptionJourneyText {
+      width: 226px;
+      height: 24px;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 16px;
+      font-weight: bold;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: 1.25;
+      letter-spacing: normal;
+      text-align: center;
+      color: $primary-color;
+    }
+    .prescriptionJourneyButton:hover,.prescriptionJourneyButton:active{
+      width: 255px;
+      height: 60px;
+      border-radius: 6px;
+      background-color: #1b355c;
+      border: solid 2px $boots-blue;
+      }
+      
+  }
+
+.searchBox{
+  width:30%;
+  margin: 0 auto;
+  .medicineTitle{
+    width: 540px;
+  height: 40px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 36px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 0.78;
+  letter-spacing: normal;
+  text-align: center;
+  color: #004990;
+  margin-top: 62px;
+  margin-bottom: 30px;
+  text-align: center;
+  }
+
+
+  .inputContainer {
+    width: 86%;
+    margin: 0 auto;
+    border-bottom: 1px solid #bbb4b4;
+    height:52px;
+    label.search-for-medicine-prompt {
+      margin: 10px 7%;
+      width: 100%;
+      font-weight: bold;
+    }
+    .form-group{
+      display: inline;
+    }
+    .searchInput {
+      background-color: none !important;
+      font-size: 19px;
+      width:80%;
+      font-family: sans-serif;
+      display: inline-block;
+      outline: none;
+      border: none;
+      outline:none;
+      padding-top: 10px;
+      border-radius: 0;
+      &:focus {
+        border: none !important;
+      }
+}
+.searchButton{
+  background-color:white!important;
+  border-style:none;
+  padding: 8px;
+  float: right;
+  padding-top: 0px;
+}
+.showMore {
+  color: blue;
+  font-weight: bold;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.showAllResult {
+  width: 276px;
+  height: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #3f8266;
+}
+
+
+
+  }
+  
+  
+
+}
+
+.searchItems {
+  background-color: #f7f9fb;
+  padding-bottom: 50px;
+  min-height: 39vw;
+  .result{
+    color: #004990;
+    height: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 22px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    padding: 32px 0;
+    margin-left: 12%;
+  }
+  .selectItem{
+    color: forestgreen;
+    float: right; 
+  }
+  
+.searchList {
+  width: 87.2%;
+  margin: 0 auto;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  padding-left: 0;
+  margin-bottom: 50px;
+  li {
+    width: 78%;
+    height: 80px;
+    border-radius: 6px;
+    background-color: #ffffff;
+    padding: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #414141;
+    margin: 20px auto;
+    position: relative;
+    display: block;
+    padding: 1.75rem 1.25rem;
+    margin-bottom: -1px;
+    background-color: #fff;
+    border: 1px solid rgba(0,0,0,.125);
+    .itemName {
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      width: 80%;
+      display: inline-block;
+      overflow: hidden
+    }
+  }
+
+  .showMoreButton {
+    width: 16%;
+    height: 60px;
+    border-radius: 6px;
+    background-color: #ffffff;
+    border: solid 2px #004990;
+  
+  .showMoreText {
+    width: 226px;
+    height: 24px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.25;
+    letter-spacing: normal;
+    text-align: center;
+    color: #004990;
+    width: 100%;
+    margin: 0 auto;
+    display: block;
+    cursor: pointer;
+    margin-top: -10px;
+  }
+}
+}
+}
+  .search-for-medicine{
+    .search-for-medicine-prompt{
+      width: 345px;
+      height: 30px;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 16px;
+      margin: 12px 7%;
+      font-weight: bold;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: normal;
+      letter-spacing: normal;
+      color: #414141;
+    }
+  }
+.searchContainer{
+  min-height: 96vw;
+}
+  .wag-search-suggested-items{
+    border-top: none;
+    z-index: 99;
+    padding: 0;
+    list-style-type: none;
+    /*position the autocomplete items to be the same width as the container:*/
+    
+    font-family: Arial, Helvetica, sans-serif;
+    width: 25.8%;
+    margin: 0 auto;
+    position: absolute;
+    margin-top: -11px;
+  
+    li {
+    padding: 10px;
+    cursor: pointer;
+    font-family: sans-serif;
+    font-weight: bolder;
+    background-color: #fff; 
+    border-left: 1px solid #d4d4d4;
+    border-right: 1px solid #d4d4d4;
+    &:hover {
+    background-color:#f8f8f8;
+    }
+    
+    }
+  
+  }
+
+@media (min-width: 320px) and (max-width: 1024px) {
+  .searchBox {
+    width:100%;
+    .inputContainer{
+      width:95%;
+      .searchInput{
+        width:91%;
+        outline:none;
+      }
+      
+    }
+    .medicineTitle{
+      font-size: 30px;
+      width: 100%;
+      text-align:left;
+      padding-left: 18px;
+      margin-bottom: 0px;
+        }
+    
+  }
+ 
+.searchContainer{
+  min-height: 59vh;
+} 
+  .searchItems {
+    .result {
+      margin-left:0;
+    }
+    .searchList{
+      li{
+        width: 100%;
+      }
+      
+  .showMoreButton {
+    width:100%;
+  }
+    } 
+  }
+  .wag-search-suggested-items{
+  width: 95%;
+  }
+  .search-for-medicine{
+    .search-for-medicine-prompt{
+      font-size: 16px;
+      margin: 13px 2.5%;
+    }
+  }
+}
+
+@media (min-width: 320px) and (max-width: 568px) {
+  .searchBox {
+    width:100%;
+    .inputContainer{
+      .searchInput{
+        width:80%;
+        outline:none;
+      }
+    }
+    
+.medicineTitle{
+  font-size: 30px;
+  width: 100%;
+  text-align:left;
+  padding-left: 9px;
+  margin-bottom: 0px;
+}
+}
+
+.searchItems {
+  .searchList{
+    li{
+      width: 100%;
+    }
+    
+.showMoreButton {
+  width:100%;
+}
+  } 
+}
+
+}

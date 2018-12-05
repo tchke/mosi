@@ -1,0 +1,139 @@
+.itemContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.itemLabelBox {
+  margin: 1em 5%;
+}
+
+.itemLabelText {
+  font-size: 1.125em;
+  font-weight: bold;
+  color: $boots-blue;
+}
+
+.itemOuterContainer {
+  width: 90%;
+  align-self: center;
+  background-color: $white;
+  border-radius: 6px;
+  border: solid 1px #e5eff9;
+  margin-bottom: 1em;
+}
+
+.itemInnerContainer {
+  padding: 1em;
+  @media (min-width: $laptop-min-width) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.detailsAndPrice {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  @media (min-width: $laptop-min-width) {
+    width: 50%;
+  }
+}
+
+.explanatoryText {
+  line-height: 1.68em;
+  white-space: pre-wrap;
+  font-family: $font-roboto;
+  padding-bottom: 0.625em;
+}
+
+.primaryDetail {
+  line-height: 1.875em;
+  font-weight: bold;
+}
+
+.secondaryDetail {
+  line-height: 1.68em;
+  white-space: pre-wrap;
+  font-family: $font-roboto;
+}
+
+.itemPrice {
+  color: $boots-blue;
+  font-weight: bold;
+  line-height: 1.857em;
+  align-self: flex-start;
+  @media (min-width: $laptop-min-width) {
+    align-self: center;
+  }
+}
+
+.itemButtons {
+  margin-top: 1.5em;
+
+  @media (min-width: $laptop-min-width) {
+    margin-top: 0;
+    align-self: center;
+  }
+}
+
+%button {
+  width: 4.375em;
+  font-size: 1em;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.changeButton {
+  @extend %button;
+  color: $green;
+}
+
+.removeButton {
+  @extend %button;
+  color: $red;
+  margin-left: 1.5em;
+}
+
+.checkBox {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  cursor: pointer;
+
+  input {
+    display: none;
+  }
+
+  &:hover .checkMark {
+    background-color: $lightGrey;
+  }
+}
+
+.checkHint {
+  margin-left: 1em;
+  font-family: $font-roboto;
+}
+
+.checkMark {
+  width: 23px;
+  height: 23px;
+  border-radius: 3px;
+  border: solid 1px black;
+  background-color: $white;
+}
+
+.checkedBox {
+  display: none;
+}
+
+.checkBox input:checked ~ .checkedBox {
+  display: block;
+  line-height: 0;
+}
+
+.checkBox input:checked ~ .checkMark {
+  display: none;
+}

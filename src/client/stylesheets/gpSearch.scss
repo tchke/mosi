@@ -1,0 +1,357 @@
+// @font-face{
+//   font-family:"VAGRoundedStd";
+//   src:url("../fonts/vag/VAGRoundedBT-Regular.otf"); 
+// }
+$primary-header-color: #004990 !important;
+$primary-header-font-color: #ffffff !important;
+.gpSearchInput {
+    margin: 1em 1em 1em 1em;
+    h1{
+      font-family: inherit;
+        font-size: 30px;
+        font-weight: bold;
+        font-style: normal;
+        font-stretch: normal;
+        //line-height: 0.93;
+        letter-spacing: normal;
+        color: $primary-header-color
+    }
+    .label{
+      font-family: inherit;
+      font-size: 16px;
+      font-weight: bold;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: normal;
+      letter-spacing: normal;
+      color: #414141;
+      margin-top:22px;
+      margin-bottom:5px;
+    }
+    .input-group{
+      border-bottom: 1px solid grey;
+      .searchStyle{
+        font-family: inherit;
+        font-size: 16px;
+        font-weight: normal;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        color: #414141;
+        border-style:none;
+        height:8%;
+        padding:0!important;
+      }
+      input[type=text]:focus{
+        border-style:none;
+      }
+      .input-group-prepend{
+        .searchIcon{
+          background-color:white!important;
+          border-style:none;
+        }
+      }
+  }
+    .locationStyle{
+      padding:0.5em 0;
+      display: flex;
+      .locationImageStyle{
+        img{
+        height: 32px;
+        padding: 2px;
+        margin: 1px;
+        color: #3f8266;
+        }
+      }
+      a{
+        font-family: inherit;
+        font-size: 16px;
+        font-weight: normal;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        color: #3f8266;
+        margin-top:8px;
+      }
+      label{
+        margin:0!important;
+      }
+    }
+  }
+  
+.searchList {
+    margin: 1em;
+  }
+  
+  .searchListHeading {
+    font-weight: bold;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #212529;
+    text-align: left;
+  }
+  
+  .searchListItem {
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    text-align: left;
+    display: inline;
+  }
+  
+  .label {
+    float: left;
+    font-weight: bold;
+  }
+  
+  .labelLink {
+    cursor:pointer;
+    color:$primary-header-color;
+    text-decoration:underline;
+  }
+  
+  .selectButton {
+    float: right;
+    background-color: $primary-header-color;
+    border-style:none;
+  }
+  
+  .search {
+   
+   background-color: #f7f9fb;
+
+    .label {
+        float: left;
+        font-weight: bold;
+        font-family: inherit;
+        font-size: 18px;
+        font-weight: bold;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        color: $primary-header-color;
+        margin-bottom:18px;
+        margin-top:15px;
+        padding-left:0!important;
+      }
+      .input-group-prepend{
+        .searchIcon{
+        background-color:white!important;
+        border-style:none;
+        }
+      }
+  .tab1Button  {
+    width: 50%;
+    font-family: inherit;
+    font-size: 16px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 2;
+    letter-spacing: normal;
+    text-align: center;
+    //color: #ffffff;
+    border-radius: 6px;
+    border: solid 2px $primary-header-color;
+    //background-color:$primary-header-color;
+  }
+  .inactive-tab{
+    color: $primary-header-color;
+    background-color:$primary-header-font-color;
+  }
+  .active-tab{
+    background-color:$primary-header-color;
+    color: #ffffff;
+  }
+  .tab2Button {
+    width: 50%;
+    border-radius: 6px;
+    border: solid 2px $primary-header-color ;
+    font-family: inherit;
+    font-size: 16px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 2;
+    letter-spacing: normal;
+    text-align: center;
+    //color: $primary-header-color;
+    border-radius: 6px;
+    border: solid 2px $primary-header-color;
+    //background-color:$primary-header-font-color;
+  }
+  .searchList {
+    margin: 1em 0;
+    .list-group{
+        .list-group-item{
+        border-radius: 6px;
+        border: solid 1px #cae0f5;
+        background-color:$primary-header-font-color;    
+        margin:9px 0px 2px 0px;
+        height:195px;
+        .searchListMilesHeading{
+            font-family: inherit;
+            font-size: 16px;
+            font-weight: bold;
+            font-style: normal;
+            font-stretch: normal;
+            line-height: normal;
+            letter-spacing: normal;
+            color: #414141;
+            float: left;
+            margin-top:2px;
+        }
+        .searchListHeading{
+            font-family: inherit;
+            font-size: 16px;
+            font-weight: normal;
+            font-style: normal;
+            font-stretch: normal;
+            line-height: normal;
+            letter-spacing: normal;
+            color: #414141;
+            float: left;
+            margin-top:2px;
+        }
+        .list-group-item-text{
+            font-family: inherit;
+            font-size: 13px;
+            font-weight: normal;
+            font-style: normal;
+            font-stretch: normal;
+            line-height: normal;
+            letter-spacing: normal;
+            color: #414141;
+            margin-top:42px;
+            line-height: 1.75;
+            
+        }
+        .selectButton{
+            font-family: inherit;
+            font-size: 16px;
+            font-weight: normal;
+            font-style: normal;
+            font-stretch: normal;
+            line-height: normal;
+            letter-spacing: normal;
+            text-align: right;
+            color: #3f8266;
+            background-color: #ffffff!important;
+            font-weight:450;
+        }
+        .gpNotStyle{ 
+          display: flex;
+          img{ 
+         
+          }
+          .gpNotFoundStyle{
+            font-family: inherit;
+            font-size: 13px;
+            font-weight: normal;
+            font-style: normal;
+            font-stretch: normal;
+            line-height: normal;
+            letter-spacing: normal;
+            color: #c4144f;
+            width:75%;
+          }
+      }
+    }
+   }
+  }
+}
+.cardStyle{
+  background-color: #f7f9fb;
+.card-expandable-gp{
+  //margin:20px;
+  border-style:none;
+  .card-header{
+    background-color: #f7f9fb;
+    border-style:none;
+    padding-left:0px;
+    padding-right:0px;
+    a{
+      font-family: inherit;
+      font-size: 16px;
+      font-weight: normal;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: normal;
+      letter-spacing: normal;
+      color: #3f8266;
+    }
+    .gpExpansionOpen {
+      transform: rotate(180deg);
+    }
+  }
+  .card-block-parent{
+    background-color: #f7f9fb;
+    .card-block{
+      font-family: inherit;
+      font-size: 16px;
+      font-weight: normal;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: 1.44;
+      letter-spacing: normal;
+      color: #414141;
+      margin-left:3%;
+      width:90%;
+      text-align:justify;
+      padding-left:25px;
+      margin-bottom:20px;
+    }
+  }
+}
+}
+.showMoreStyle{
+  background-color: #f7f9fb;
+  padding-bottom:16px;
+.showMoreButton {
+  width: 90%;
+  padding:20px;
+  margin-left:20px;
+  height: 60px;
+  border-radius: 6px;
+  border: solid 2px #004990;
+  background-color: #f7f9fb;
+  .showMoreText {
+    width: 226px;
+    height: 24px;
+    font-family: inherit;
+    font-size: 16px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.25;
+    letter-spacing: normal;
+    text-align: center;
+    color: #004990;
+  }
+}
+}
+.backToTopStyle{
+  width: 96%;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  button{
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: $primary-header-color;
+  }
+}
+
+#desktopStyle{
+  background-color:#f7f9fb
+}

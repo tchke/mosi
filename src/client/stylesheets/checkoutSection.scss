@@ -1,0 +1,23 @@
+.checkoutSectionContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 12em;
+}
+
+.checkoutTotal {
+  margin-bottom: 1em;
+}
+
+.checkoutTotalText {
+  font-size: 1.125em;
+  font-weight: bold;
+}
+
+.checkoutTotalPrice {
+  font-size: 1.875em;
+  font-weight: bold;
+  color: $green;
+}

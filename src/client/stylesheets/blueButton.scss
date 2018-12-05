@@ -1,0 +1,16 @@
+.blueButton {
+  width: 100%;
+  max-width: 21.44em;
+  height: 3.75em;
+  border-radius: 6px;
+  color: $white;
+  font-size: 1em;
+  font-weight: bold;
+  line-height: 1.25em;
+  background-color: $boots-blue;
+  cursor: pointer;
+}
+
+.blueButton:hover {
+  background-color: $darkBlue;
+}

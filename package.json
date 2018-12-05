@@ -1,0 +1,139 @@
+{
+  "name": "mosi",
+  "version": "1.0.0",
+  "description": "mosi",
+  "main": "index.js",
+  "scripts": {
+    "dev": "npm-run-all --parallel dev:*",
+    "dev:server": "nodemon --watch build --exec node build/bundle.js",
+    "dev:build-server": "webpack --config webpack.server.js --watch",
+    "dev:build-client": "webpack --config webpack.client.js --watch",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage --coverageDirectory=__tests__/coverage/jest",
+    "unit-test": "jest --coverage --coverageDirectory=__tests__/coverage/jest",
+    "unit-test-report": "node test/unit/utils/json-to-html.js",
+    "sonarqube-scanner": "node_modules/sonarqube-scanner/dist/bin/sonar-scanner -Dsonar.host.url=http://10.120.153.197:9000 -Dsonar.projectKey=boots-ndcp-ui -Dsonar.projectName=bootsndcpui -Dsonar.sources=src -Dsonar.javascript.lcov.reportPaths=__tests__/coverage/jest/lcov.info -Dsonar.exclusions=__tests__/coverage/jest/lcov-report/index.html",
+    "pack": "mkdir -p build && zip -r build/bootsndcpui.zip config public build node_modules package.json",
+    "build-prod": "webpack --config webpack.client.js && webpack --config webpack.server.js",
+    "start": "node build/bundle.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@pact-foundation/pact": "^6.0.2",
+    "@svgr/webpack": "3.0.0",
+    "assert.js": "^0.5.0",
+    "axios": "^0.16.2",
+    "babel-cli": "6.26.0",
+    "babel-core": "6.26.0",
+    "babel-jest": "^23.6.0",
+    "babel-loader": "7.1.2",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-es2015": "6.24.1",
+    "babel-preset-es2017": "6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-0": "6.24.1",
+    "body-parser": "^1.18.3",
+    "classnames": "^2.2.6",
+    "clean-webpack-plugin": "^0.1.19",
+    "compression": "1.7.0",
+    "concurrently": "3.5.0",
+    "express": "4.15.4",
+    "express-http-proxy": "1.0.6",
+    "extract-text-webpack-plugin": "^3.0.2",
+    "fs": "0.0.1-security",
+    "google-geocoder": "^0.2.1",
+    "jest": "^23.6.0",
+    "lodash": "^4.17.4",
+    "node-localstorage": "^1.3.1",
+    "nodemon": "^1.18.4",
+    "react": "16.0.0",
+    "react-cookie-banner": "^4.0.0",
+    "react-dom": "16.0.0",
+    "react-helmet": "5.2.0",
+    "react-redux": "5.0.6",
+    "react-router": "^4.3.1",
+    "react-router-config": "1.0.0-beta.4",
+    "react-router-dom": "4.2.2",
+    "react-svg": "6.0.15",
+    "react-test-renderer": "^16.5.2",
+    "redis": "^2.8.0",
+    "redux": "3.7.2",
+    "redux-mock-store": "^1.5.3",
+    "redux-thunk": "2.2.0",
+    "sass": "^1.14.0",
+    "serialize-javascript": "1.4.0",
+    "sonarqube-scanner": "^2.1.2",
+    "style-loader": "^0.23.0",
+    "url-loader": "^1.1.1",
+    "webpack": "^3.5.6",
+    "webpack-dev-server": "2.8.2",
+    "webpack-merge": "4.1.0",
+    "webpack-node-externals": "1.6.0"
+  },
+  "devDependencies": {
+    "axios-mock-adapter": "^1.15.0",
+    "bootstrap": "^4.1.3",
+    "css-loader": "^1.0.0",
+    "enzyme": "^3.7.0",
+    "enzyme-adapter-react-15": "^1.1.1",
+    "enzyme-adapter-react-16": "^1.6.0",
+    "enzyme-to-json": "^3.3.4",
+    "identity-obj-proxy": "^3.0.0",
+    "jest-enzyme": "^6.1.2",
+    "node-sass": "^4.9.3",
+    "npm-run-all": "^4.1.3",
+    "react-router-test-context": "^0.1.0",
+    "react-svg-loader": "2.1.0",
+    "reactstrap": "^6.5.0",
+    "sass-loader": "^7.1.0",
+    "sfcookies": "^1.0.2",
+    "webpack-cli": "^3.1.2"
+  },
+  "jest": {
+    "setupTestFrameworkScriptFile": "./__tests__/setup/setupEnzyme.js",
+    "moduleNameMapper": {
+      "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/__mocks__/fileMock.js",
+      "\\.(css|less)$": "identity-obj-proxy"
+    },
+    "toJson": "enzyme-to-json",
+    "transform": {
+      "^.+\\.js$": "babel-jest"
+    },
+    "collectCoverageFrom": [
+      "**/src/**.js",
+      "!**/node_modules/**"
+    ],
+    "unmockedModulePathPatterns": [
+      "./node_modules/react",
+      "./node_modules/react-dom",
+      "./node_modules/react-addons-test-utils",
+      "./node_modules/fbjs"
+    ],
+    "moduleFileExtensions": [
+      "js",
+      "jsx",
+      "json",
+      "es6"
+    ],
+    "testPathIgnorePatterns": [
+      "./__tests__/setup/",
+      "./node_modules",
+      "./test",
+      "./__tests__/coverage"
+    ],
+    "coveragePathIgnorePatterns": [
+      "./node_modules",
+      "./test",
+      "./__tests__/coverage"
+    ]
+  },
+  "babel": {
+    "presets": [
+      "es2015",
+      "react",
+      "stage-0"
+    ]
+  }
+}

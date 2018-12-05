@@ -1,0 +1,61 @@
+.footerColumn {
+    border-top: 1px solid #b5cde7;
+
+    &:last-of-type {
+        border-bottom: 1px solid #b5cde7;
+    }
+
+    a.collapseTrigger {
+        position: relative;
+        display: block;
+        height: 45px;
+
+        padding-top: 9px;
+
+        img {
+            position: absolute;
+            right: 1px;
+            top: 11px;
+        }
+    }
+
+    .footerCollapser {
+        ul.nav {
+            display: block;
+
+            .nav-item .nav-link {
+                padding: 0;
+            }
+        }
+
+        .card-body {
+            background-color: #004990;
+        }
+
+        @include media-breakpoint-up(md) {
+            .collapse {
+                display: block
+            }
+        }
+    }
+
+    ul.nav {
+        padding-inline-start: 0px;
+    }
+}
+
+@include media-breakpoint-up(md) {
+    .footerColumn {
+        border: none;
+
+        &:last-of-type {
+            border: none;
+        }
+
+        a.collapseTrigger {
+            img {
+                display: none;
+            }
+        }
+    }
+}

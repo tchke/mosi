@@ -1,0 +1,11 @@
+.contentStyle {
+    text-align: center;
+    margin-top: 120px;
+    min-height: 380px;
+}
+
+@media (min-height: 820px) {
+    .contentStyle {
+        min-height: calc(100% - 542px);
+    }
+}

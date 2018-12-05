@@ -1,0 +1,93 @@
+@import "colors.scss";
+@import "breakpoints";
+@import "fonts";
+
+.cookieNoticeContainer {
+  width: 100%;
+  height: 13.75em;
+  background-color: $white;
+  position: fixed;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  box-shadow: 0 0.125em 0.625em 0 rgba(0, 0, 0, 0.16);
+
+  @media (min-width: $tablet-min-width) {
+    height: 140px;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+  }
+}
+
+.cookieIconContainer {
+  max-width: 55px;
+  height: 100%;
+  align-self: flex-end;
+
+  @media (min-width: $tablet-min-width) {
+    max-width: 159px;
+  }
+
+  @media (min-width: $laptop-min-width) {
+    max-width: 260px;
+  }
+}
+
+.cookieNoticeText {
+  font-family: $font-roboto;
+  color: $darkGrey;
+  font-size: 1em;
+  margin-top: 0;
+
+  a {
+    color: $blue;
+    text-decoration: none;
+  }
+}
+
+.cookieTextContainer {
+  max-width: 277px;
+  margin-top: 1.4375em;
+  margin-right: 2.6875em;
+
+  @media (min-width: $tablet-min-width) {
+    margin-top: 2.25em;
+    max-width: 330px;
+  }
+
+  @media (min-width: $laptop-min-width) {
+    max-width: 730px;
+    margin-top: 2.75em;
+    flex-shrink: auto;
+  }
+}
+
+.cookieIcon {
+  margin-top: 1.4375em;
+  padding-right: 0.625em;
+
+  @media (min-width: $tablet-min-width) {
+    margin-top: 3.1875em;
+    padding-right: 3.1875em;
+  }
+
+  @media (min-width: $laptop-min-width) {
+    margin-top: 3.1875em;
+    padding-left: 4.1875em;
+  }
+}
+
+.buttonContainer {
+  max-width: 277px;
+
+  @media (min-width: $tablet-min-width) {
+    width: 210px;
+    margin-top: 2.25em;
+  }
+
+  @media (min-width: $laptop-min-width) {
+   width: 255px;
+  }
+}

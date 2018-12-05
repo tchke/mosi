@@ -1,0 +1,76 @@
+{
+    "sections": [
+        {
+            "title": "Help & Support",
+            "items": [
+                {                    
+                    "title": "FAQ",
+                    "path": "/faq"
+                    
+                },
+                {
+                    "title": "Contact Us",
+                    "path": "/contactus"
+                },
+                {
+                    "title": "Delivery & Returns",
+                    "path": "/deliveryandreturns"
+                },
+                {
+                    "title": "Product Recall",
+                    "path": "/productrecall"
+                },
+                {
+                    "title": "Pharmacy Locator",
+                    "path": "/pharmacylocator"
+                }
+            ]
+        },
+        {
+            "title": "Company",
+            "items": [
+                {
+                    "title": "Partners",
+                    "path": "/partners"
+                },
+                {
+                    "title": "Corporate Responsibility",
+                    "path":"/corporateresponsibility"
+                },            
+                {
+                    "title": "Careers",
+                    "path": "/careers"
+                },
+                {
+                    "title": "Testimonials",
+                    "path": "/testimonials"
+                },
+                {
+                    "title": "Boots.com",
+                    "path": "/bootsdotcom"
+                }
+            ]
+        },
+        {
+            "title": "Legal & Website",
+            "items": [
+                {
+                    "title": "Terms & Conditions",
+                    "path": "/termsandconditions"
+                },
+                {
+                    "title": "Privacy & Cookies",
+                    "path": "/cookiesandprivacypolicy"
+                },
+                {
+                    "title": "Accessibility",
+                    "path": "/accessibility"
+                },
+                {
+                    "title": "Sitemap",
+                    "path": "/sitemap"
+                }                
+            ]
+        }    
+    ]
+}

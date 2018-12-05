@@ -1,0 +1,105 @@
+.medicineSpecModal {
+    @include media-breakpoint-up(sm) {
+        .modal-dialog {
+            max-width: 350px;
+        }
+    }
+
+    .modal-dialog {
+        .modal-content {
+            max-width: 350px;
+            height: 520px;
+            padding: 20px 15px;
+
+            .modal-header {
+                padding: 0;
+                border-bottom: none;
+                color: $blue;
+                flex-direction: column-reverse;
+
+                .closeCon {
+                    margin-top: -9px;
+                    height: 37px;
+                    width: 100%;
+                    text-align: right;
+               
+                }
+
+                .close {
+                    color: $blue;
+                    float: none;
+                    padding: 0;
+                    margin: 0;
+                    opacity: 1;
+                }
+
+                .close:hover {
+                    opacity: 1;
+                }
+
+                .modal-title {
+                    font-size: 30px;
+                    line-height: 0.8;
+                }
+            }
+
+            .modal-body {
+                padding: 0;
+
+                .form-group {
+                    margin-top: 32px;
+                    margin-bottom: 0;
+
+                    &[disabled] {
+                        color: $mediumGrey;
+
+                        select, input {
+                            color: $mediumGrey;
+                        }
+
+                        .form-control {
+                            background-color: $white;
+                        }
+                    }
+
+                    label {
+                        height: 29px;
+                        margin: 0;
+
+                        img {
+                            margin-top: -1px;
+                            margin-left: 6px;
+                        }
+                    }
+
+                    select, input {
+                        height: 48px;
+                        border: none;
+                    }
+
+                    border-bottom: 1px solid #b6b6b6;
+                }
+            }
+
+            .modal-footer {
+                padding: 0;
+                border-top: none;
+                color: $blue;
+
+                .btn {
+                    width: 100%;
+                    height: 60px;
+                }
+
+                .btn-primary {
+                    background-color: #004890;
+                }
+            }
+        }
+    }
+
+    .modal-backdrop {
+        opacity: 1;
+        background-color: rgba(202, 224, 245, 0.8);
+    }
+}

@@ -1,0 +1,39 @@
+
+.orderReceivedContainer {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.receivedText {
+    color: $blue;
+    font-family: $font-vag-rounded-std;
+    font-size: 1.875em;
+    font-weight: bold;
+    line-height: 2.5rem;
+    margin-top: 1.25rem;
+}
+
+.emailText {
+    font-family: $font-vag-rounded-std;
+    font-weight: bold;
+    line-height: 1.875rem;
+    margin-bottom: 1.25rem;
+}
+
+%sharedText {
+    font-family: $font-roboto;
+    font-size: 1em;
+    max-width: 345px;
+    text-align: center;
+}
+
+.infoText {
+    @extend %sharedText;
+    padding-bottom: 1.188rem;
+}
+
+.confirmationInfoText {
+    @extend %sharedText;
+    line-height: 1.875rem;
+}
